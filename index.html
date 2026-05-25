@@ -1,10 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Management System</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello GitHub!</h1>
-    <p>This is my first HTML project.</p>
+
+<header>
+  <h1>Product Management System</h1>
+  <p>Manage Products Efficiently</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Products</a>
+  <a href="#">Inventory</a>
+  <a href="#">Reports</a>
+  <a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+  <div>
+    <h2>Smart Product Tracking</h2>
+    <p>Easy product and inventory management system</p>
+  </div>
+</section>
+
+<section class="container">
+
+  <h2>Add Product</h2>
+
+  <div class="form-box">
+    <input type="text" id="productName" placeholder="Enter Product Name">
+    <input type="text" id="category" placeholder="Enter Category">
+    <input type="number" id="price" placeholder="Enter Price">
+    <button onclick="addProduct()">Add Product</button>
+  </div>
+
+  <h2>Product List</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Product Name</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody id="productTable">
+    </tbody>
+  </table>
+
+</section>
+
+<footer>
+  <p>© 2026 Product Management System</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
